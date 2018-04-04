@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+}
+
+/* spinner */
+.spinner{
+    height: 100px;
+    width: 100px;
+    background-color: #218ac3;
+    border-radius: 50%;
+    margin: 50px auto;
+    animation:fade 1s infinite ease-in-out;
+      -webkit-animation:fade 1s infinite ease-in-out;
+}
+@keyframes fade{
+    from{
+        transform:scale(0);
+        -webkit-transform:scale(0);
+    }
+    to{
+        transform:scale(1.0);
+        -webkit-transform:scale(1.0);
+        opacity: 0;
+    }
+}
+/* circle loading */
+.circle{
+    height: 100px;
+    width: 100px;
+    border-left: 5px solid #fff;
+    border-radius: 50%;
+    margin: 50px auto;
+    animation:round 1s infinite linear;
+    -webkit-animation:round 1s infinite linear;
+}
+.circle2{
+    height: 100px;
+    width: 100px;
+    border-left: 6px solid #fff;
+    border-top:6px solid #555;
+    border-bottom:6px solid #555;
+    border-right:6px solid #555;
+    border-radius: 50%;
+    margin: 50px auto;
+    animation:round 1s infinite linear;
+    -webkit-animation:round 1s infinite linear;
+}
+@keyframes round{
+    from{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+/* line */
+.line{
+    padding-top: 20px;
+    height: 100px;
+    width: 100px;
+    margin: 50px auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.line>div{
+    display: inline-block;
+    height: 30px;
+    width: 4px;
+    background-color: #fff;
+    animation:linea 1s infinite ease-in-out;
+    -webkit-animation:linea 1s infinite ease-in-out;
+}
+.line2{
+    -webkit-animation-delay:-0.9s !important;
+    animation-delay:-0.9s !important;
+}
+.line3{
+    -webkit-animation-delay:-0.8s !important;
+    animation-delay:-0.8s !important;
+}
+.line4{
+    -webkit-animation-delay:-0.7s !important;
+    animation-delay:-0.7s !important;
+}
+.line5{
+    -webkit-animation-delay:-0.6s !important;
+    animation-delay:-0.6s !important;
+}
+@keyframes linea{
+    0%,40%,100%{
+        -webkit-transform:scaleY(0.3);
+        transform:scaleY(0.3);
+    }
+    20%{
+        -webkit-transform:scaleY(1);
+        transform:scaleY(1);
+    }
+}
+/* baidu balls */
+.block{
+    height: 200px;
+    width: 350px;
+    margin: 50px auto;
+    background: #eee;
+    position: relative;
+}
+.block .ball{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+.block .red1{
+    background: red;
+    animation:redball 5s infinite linear;
+}
+.block .blue1{
+    background: blue;
+    animation:blueball 5s infinite linear;
+}
+.block .black1{
+    background: black;
+    animation:blackball 5s infinite linear;
+}
+
+@keyframes redball{
+    8.33333%,25%{
+        transform: translateX(-50px);
+    }
+    16.66666%,33.33333%,41.66666%,50%,66.66666%,83.33333%,91.66666%,100%{
+        transform: translateX(0px);
+    }
+    58.33333%,75%{
+        transform: translateX(50px);
+    }
+}
+@keyframes blueball{
+    16.66666%,33.33333%,50%,58.33333%,66.66666%,83.33333%,100%{
+        transform: translateX(0px);
+    }
+    25%,41.66666%{
+        transform: translateX(50px);
+    }
+    75%,91.66666%{
+        transform: translateX(-50px);
+    }
+}
+@keyframes blackball{
+    8.33333%,91.66666%{
+        transform: translateX(50px);
+    }
+    16.66666%,25%,33.33333%,50%,66.66666%,75%,83.33333%{
+        transform: translateX(0px);
+    }
+    41.66666%,58.33333%{
+        transform: translateX(-50px);
+    }
+}

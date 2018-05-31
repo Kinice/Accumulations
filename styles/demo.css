@@ -266,3 +266,28 @@ body{
     transform:rotate(-35deg);
     -webkit-transform:rotate(-35deg);
 }
+
+.test{
+    font-size: 120pt;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+}
+
+.test span{
+    background-color: red;
+}
+
+.a{
+    font-family: Helvetica;
+}
+
+.b{
+    font-family: Georgia;
+}
+
+.c{
+    font-family: Catamaran;
+}

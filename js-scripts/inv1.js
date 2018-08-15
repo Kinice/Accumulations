@@ -1,4 +1,4 @@
-var name = 'html'
+name = 'html'
 var person = {
     name: 'less',
     sayName: function() {
@@ -14,13 +14,20 @@ var person = {
         name: 'stylus',
         sayName: () => {
             console.log(`${name} -- `, `${this.name}`)
+            console.log(module)
+            console.log(global.name)
+        },
+        mid: {
+            name: 'gulp',
+            sayName: () => {
+                console.log(`${name} -- `, `${this.name}`)
+            }
         }
     }
 }
 
 person.sayName()
-// html -- less
+
 person.man.sayName()
-// html -- sass
+
 person.woman.sayName.call(person)
-// html -- html

@@ -7,3 +7,5 @@ var func = (function(a) {
 })(function(a, b) {
     return a;
 }(1, 2));
+
+console.log(func(1))

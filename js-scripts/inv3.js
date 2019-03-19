@@ -8,5 +8,5 @@ var obj = {
   a: 2,
   foo: foo
 };
-var a = 3;
+var a = 3
 doFoo(obj.foo)
